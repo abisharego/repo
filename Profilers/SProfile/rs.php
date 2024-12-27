@@ -1,16 +1,16 @@
 <?php
 session_start();
 
-$connect = mysql_connect("localhost", "root", ""); // Establishing Connection with Server
-   mysql_select_db("placement") or die("Cant Connect to database"); // Selecting Database from Server
+$connect = mysqli_connect("localhost", "root", ""); // Establishing Connection with Server
+   mysqli_select_db($connect,"revided") or die("Cant Connect to database"); // Selecting Database from Server
  
   $USN = $_POST['USN'];
   $Question = $_POST['Question'];
   $Answer = $_POST['Answer'];
-  $check = mysql_query("SELECT * FROM slogin WHERE USN='".$USN."'") or die("Check Query");
- if(mysql_num_rows($check) != 0) 
+  $check = mysqli_query($connect,"SELECT * FROM slogin WHERE USN='".$USN."'") or die("Check Query");
+ if(mysqli_num_rows($check) != 0) 
  {
-	 $row = mysql_fetch_assoc($check);
+	 $row = mysqli_fetch_assoc($check);
 	 $dbQuestion = $row['Question'];
 	 $dbAnswer = $row['Answer'];
   if($dbQuestion == $Question && $dbAnswer==$Answer) 

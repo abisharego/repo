@@ -76,7 +76,7 @@ if($USN !=''||$email !='')
 	if($USN == $sun)
 	{
 		
-	$sql = mysqli_query($connect,"SELECT * FROM `details`.`basicdetails` WHERE `USN`='$USN'");
+	$sql = mysqli_query($connect,"SELECT * FROM `revised`.`basicdetails` WHERE `USN`='$USN'");
 	if(mysqli_num_rows($sql) == 1)
 	{
   

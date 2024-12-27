@@ -109,12 +109,12 @@
 			   <?php
 
 $num_rec_per_page=15;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; }; 
 $start_from = ($page-1) * $num_rec_per_page; 
 $sql = "SELECT * FROM basicdetails where Approve='1' DESC LIMIT $start_from, $num_rec_per_page"; 
-$rs_result = mysql_query ($sql); //run the query
+$rs_result = mysqli_query ($sql); //run the query
 ?>
 <?php
 
@@ -131,9 +131,9 @@ $dety = $_POST['dy'];
 $sql = "SELECT * FROM basicdetails where Approve=1 and Branch='$branch' and SSLC>='$sslc' and `PU/Dip`>='$puaggregate' and BE>='$beaggregate' and Backlogs='$backlogs' and HofBacklogs='$hisofbk' and DetainYears='$dety'" ; 
  //run the query
 
- $sql1 = mysql_query($sql);
+ $sql1 = mysqli_query($sql);
 
-while ($row = mysql_fetch_assoc($sql1))
+while ($row = mysqli_fetch_assoc($sql1))
 { 
 
 
@@ -169,11 +169,11 @@ print "</tr>";
 			  <?php 
 		
 $num_rec_per_page=15;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 $sql = "SELECT * FROM basicdetails where Approve='1'"; 
-$rs_result = mysql_query($sql); //run the query
-$total_records = mysql_num_rows($rs_result);  //count number of records
+$rs_result = mysqli_query($sql); //run the query
+$total_records = mysqli_num_rows($rs_result);  //count number of records
 $totalpage = ceil($total_records / $num_rec_per_page); 
 
 $currentpage = (isset($_GET['page']) ? $_GET['page'] : 1);
@@ -214,8 +214,8 @@ $prev = $currentpage-1;
 </div>
 
 			  <footer class="text-right">
-           		<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+           		<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 			  </p>
           </footer>         
         </div>

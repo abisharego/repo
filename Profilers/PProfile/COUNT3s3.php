@@ -57,18 +57,18 @@
 				  </thead>
 			   </tr>			   
  <?php		
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 if(isset($_POST['s3']))
 { 
 $Csem = $_POST['csem'];
-$RESULT = mysql_query("SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND Sem='$Csem'");
-$data = mysql_fetch_assoc($RESULT);
+$RESULT = mysqli_query($connect,"SELECT count(*) FROM basicdetails WHERE `Approve`='1' AND Sem='$Csem'");
+$data = mysqli_fetch_assoc($RESULT);
 echo "<br><h3>Students in Semister '$Csem'&nbsp:&nbsp";
 echo $data['count(*)'];
 echo "</h3>";
-$sql = mysql_query("SELECT * FROM basicdetails WHERE `Approve`='1' AND Sem='$Csem' ORDER BY Branch");
-while($row = mysql_fetch_assoc($sql))
+$sql = mysqli_query($connect,"SELECT * FROM basicdetails WHERE `Approve`='1' AND Sem='$Csem' ORDER BY Branch");
+while($row = mysqli_fetch_assoc($sql))
 {
 	            print "<tr>"; 	
 	echo '<td>'.$row['Sem'].'</td>';	
@@ -96,8 +96,8 @@ print "</tr>";
 			  </div>
  <footer class="text-right">
        
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+					<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 		
           </footer>         
         </div>

@@ -4,9 +4,9 @@
   
  $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
-$connect = mysql_connect("localhost","root","") or die("Couldn't Connect");
-		mysql_select_db("gallery") or die("Cant find DB");
-		$sql = mysql_query("INSERT INTO image VALUES('','$target_file')");
+$connect = mysqli_connect("localhost","root","") or die("Couldn't Connect");
+		mysqli_select_db($connect,"gallery") or die("Cant find DB");
+		$sql = mysqli_query($connect,"INSERT INTO image VALUES('','$target_file')");
     if($sql){
     echo "Uploaded to Database";
     }   

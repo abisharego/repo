@@ -17,14 +17,14 @@
 <center>
 <?php
 			
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 if(isset($_POST['submit']))
 { 
 $cname = $_POST['cname'];
-$sql = mysql_query("SELECT * FROM addpdrive WHERE `CompanyName`='$cname'");
+$sql = mysqli_query($connect,"SELECT * FROM addpdrive WHERE `CompanyName`='$cname'");
 
-while($row = mysql_fetch_assoc($sql))
+while($row = mysqli_fetch_assoc($sql))
 {
 	            print "<tr>"; 
 	print "<br><td>Date:";

@@ -1,7 +1,7 @@
 <?php
 session_start();
-$connect = mysql_connect("localhost", "root", ""); // Establishing Connection with Server
-mysql_select_db("placement"); // Selecting Database from Server
+$connect = mysqli_connect("localhost", "root", ""); // Establishing Connection with Server
+mysqli_select_db($connect,"revised"); // Selecting Database from Server
 
 	$Username = $_SESSION['username'];
 	$Password = $_POST['Password'];
@@ -11,15 +11,15 @@ mysql_select_db("placement"); // Selecting Database from Server
 	{
 		if($Password == $repassword)
 		{
-			$sql = mysql_query("SELECT * FROM `placement`.`slogin` WHERE `USN`='$Username'");
-			if(mysql_num_rows($sql) == 1)
+			$sql = mysqli_query($connect,"SELECT * FROM `placement`.`slogin` WHERE `USN`='$Username'");
+			if(mysqli_num_rows($sql) == 1)
 			{
-				$row = mysql_fetch_assoc($sql);
+				$row = mysqli_fetch_assoc($sql);
 				$dbpassword = $row['PASSWORD'];
 			    
 				if($cur == $dbpassword)
 				{
-					if($query = mysql_query("UPDATE `placement`.`slogin` SET `PASSWORD` = '$Password' WHERE `slogin`.`USN` = '$Username'"))
+					if($query = mysqli_query($connect,"UPDATE `placement`.`slogin` SET `PASSWORD` = '$Password' WHERE `slogin`.`USN` = '$Username'"))
 					{
 						echo "<center>Password Changed Successfully</center>";
 					} else {

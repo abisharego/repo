@@ -101,10 +101,10 @@
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
               <div class="square"></div>
-              <h2 class="templatemo-inline-block">Welcome to CIT-PMS</h2>
+              <h2 class="templatemo-inline-block">Welcome to PESITM Placement Portal</h2>
               <hr>
               <p>Work is Magic and it defines you at every aspect of ur life. As you Work Hard u will become smart and the Irony is Every Smart worker will be a Successfull man where as worthless hardwork is like a monkey finding gold in a sea.
-                <a href="preferences.php""
+                <a href="preferences.php"
                 target="_parent">Go and Fill your Details in Preferences Tab</a>
                 </p>
               <p>We have got number of Partners from the companies who are tied up to our college and it is Incresasing. We are doing our Job of getting u Placed and 
@@ -201,18 +201,6 @@
                         <td>James</td>
                         <td>@mJ</td>
                       </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Steve</td>
-                        <td>Bride</td>
-                        <td>@sB</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Paul</td>
-                        <td>Richard</td>
-                        <td>@pR</td>
-                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -221,8 +209,8 @@
           </div>
           <!-- Second row ends -->
           <footer class="text-right">
-            		<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+            		<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 			  </p>
           </footer>
         </div>

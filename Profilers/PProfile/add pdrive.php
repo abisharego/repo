@@ -78,7 +78,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../Homepage/index.php">Home PESITM-PP</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
                 <li><a href="Change Password.php" class="active">Change Password</a></li>
@@ -170,8 +170,8 @@
             </form>
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://www.wafferdevelopers.com" target="_parent">Waffer Developers</a>
+            <p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
             </p>
           </footer>
         </div>

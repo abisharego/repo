@@ -110,14 +110,15 @@ if(isset($_SESSION['reset']))
 				</div>
 				<div class="col-md-3 get_in_touch ftr">
 					<h3>GET IN TOUCH</h3>
-					<p>NH4, Herur</p>
-					<p>Gubbi, Tumkur, India</p>
-					<p>08138-223818/223365</p>
-					<a href="mailto:cittumkur@rediffmail.com">cittumkur@rediffmail.com</a>
+					<p>+91 8296317636</p>
+                    <a href="mailto:abisharego@gmail.com">pesitmoffice@pestrust.edu.in</a><br><br>
+                    <p>PES Campus</p>
+					<p>NH-206, Sagar Road</p>
+					<p>Shivamogga- 577204</p>
 				</div>
 				<div class="col-md-3 ftr-logo">
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+					<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 				</div>
 				</div>
 				<div class="clearfix"></div>

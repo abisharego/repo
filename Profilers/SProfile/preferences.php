@@ -87,7 +87,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li>
-                  <a href="../../Homepage/index.html" >Home CIT-PMS</a>
+                  <a href="../../Homepage/index.html" >Home PESITM-PP</a>
                 </li>
                 <li>
                   <a href="">Drives Homepage</a>
@@ -232,8 +232,8 @@
             </form>
           </div>
           <footer class="text-right">
-           		<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+           		<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 			  </p>
           </footer>
         </div>

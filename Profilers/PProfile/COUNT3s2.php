@@ -38,13 +38,13 @@
    <div class="templatemo-content-container">
   <div class="templatemo-content-widget no-padding">
 <?php
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 if(isset($_POST['s2']))
 { 
 $Susn = $_POST['susn'];
-$RESULT = mysql_query("SELECT * FROM basicdetails WHERE USN='$Susn'");
-$row = mysql_fetch_assoc($RESULT);
+$RESULT = mysqli_query($connect,"SELECT * FROM basicdetails WHERE USN='$Susn'");
+$row = mysqli_fetch_assoc($RESULT);
 echo "<br><h3>Details of Student '$Susn'&nbsp:&nbsp";
 echo "</h3>";
             print "<center><tr>"; 
@@ -81,8 +81,8 @@ print "</td></tr></center>";
 ?>
 <footer class="text-right">
            
-					<p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+					<p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
 				
           </footer>         
         </div>

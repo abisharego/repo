@@ -81,7 +81,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../Homepage/index.php">Home PESITM</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notification</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -122,15 +122,15 @@
 			   <?php
 		
 $num_rec_per_page=15;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 if (isset($_GET["page"])) { $page  = $_GET["page"]; } else { $page=1; }; 
 $start_from = ($page-1) * $num_rec_per_page; 
 $sql = "SELECT * FROM basicdetails where Approve='1' ORDER BY ApprovalDate DESC LIMIT $start_from, $num_rec_per_page"; 
-$rs_result = mysql_query ($sql); //run the query
+$rs_result = mysqli_query ($connect,$sql); //run the query
 ?>
 <?php
-while ($row = mysql_fetch_assoc($rs_result)) 
+while ($row = mysqli_fetch_assoc($rs_result)) 
 { 
 
             print "<tr>"; 
@@ -169,11 +169,11 @@ print "</tr>";
   <ul class="pagination">
 			  <?php 	
 $num_rec_per_page=15;
-mysql_connect('localhost','root','');
-mysql_select_db('details');
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
 $sql = "SELECT * FROM basicdetails where Approve='1' "; 
-$rs_result = mysql_query($sql); //run the query
-$total_records = mysql_num_rows($rs_result);  //count number of records
+$rs_result = mysqli_query($connect,$sql); //run the query
+$total_records = mysqli_num_rows($rs_result);  //count number of records
 $totalpage = ceil($total_records / $num_rec_per_page); 
 $currentpage = (isset($_GET['page']) ? $_GET['page'] : 1);
 	 if($currentpage == 0)
@@ -212,8 +212,8 @@ $prev = $currentpage-1;
 </ul>
 </div>
         <footer class="text-right">
-            <p>Copyright &copy; 2001-2015 CIT-PMS
-            | Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumērique Technologies</a></p>
+            <p>Copyright &copy; 2024 PESITM
+            | Developed by <a href="#" target="_parent">A4</a></p>
           </footer>         
         </div>
       </div>

@@ -74,7 +74,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../Homepage/index.php">Home PESITM</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -87,9 +87,9 @@
             <div class="templatemo-content-widget white-bg col-2">
               <i class="fa fa-times"></i>
               <div class="square"></div>
-              <h2 class="templatemo-inline-block">Welcome to CIT-OPMS</h2>
+              <h2 class="templatemo-inline-block">Welcome to PESITM-OPMS</h2>
               <p></p>
-              <p>Hello Officer! Have a great day with us! With CIT-PMS Account, You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
+              <p>Hello Officer! Have a great day with us! With PESITM-PP Account, You can add drives, Send Notifications and View the Eligibility Criteria of Students.</p>
               <p>Hope you enjoy doing that. Greetings!!</p>
               <p><a href="PlacementDrives.php">Placement Drives</a></p>
               <p><a href="manage-users.php">View Students</a></p>
@@ -180,19 +180,7 @@
                         <td>Mary</td>
                         <td>James</td>
                         <td>@mJ</td>
-                      </tr>
-                      <tr>
-                        <td>4.</td>
-                        <td>Steve</td>
-                        <td>Bride</td>
-                        <td>@sB</td>
-                      </tr>
-                      <tr>
-                        <td>5.</td>
-                        <td>Paul</td>
-                        <td>Richard</td>
-                        <td>@pR</td>
-                      </tr>                    
+                      </tr>                   
                     </tbody>
                   </table>    
                 </div>                          
@@ -201,8 +189,8 @@
           </div> <!-- Second row ends -->
         
           <footer class="text-right">
-           <p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a>
+           <p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a>
             </p>
           </footer>         
         </div>

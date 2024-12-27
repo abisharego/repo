@@ -72,7 +72,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../Homepage/index.php">Home PESITM</a></li>
                 <li><a href="">Drives Home</a></li>
                 <li><a href="Notif.php">Notifications</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -96,7 +96,7 @@
                     <option value="EEE">EEE</option>
                     <option value="ECE">ECE</option>
                     <option value="ME">ME</option>
-                    <option value="CVE">CVE</option>
+                    <option value="CVE">CV</option>
                   </select>
                 </div>			                
 				<div class="col-lg-6 col-md-6 form-group">
@@ -148,8 +148,8 @@
           </div>     
           
           <footer class="text-right">
-             <p>Copyright &copy; 2015 CIT-PMS | Developed by
-              <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a></p>
+             <p>Copyright &copy; 2024 PESITM | Developed by
+              <a href="#" target="_parent">A4</a></p>
           </footer>      
         </div>
       </div>

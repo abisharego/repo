@@ -74,7 +74,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-               <li><a href="../../Homepage/index.php">Home CIT-PMS</a></li>
+               <li><a href="../../Homepage/index.php">Home PESITM</a></li>
                 <li><a href="../../Drives/index.php">Drives Home</a></li>
                 <li><a href="Notif.php">Notification</a></li>
                 <li><a href="Change Password.php">Change Password</a></li>
@@ -97,18 +97,18 @@
 <div  class="templatemo-content-container" >
 <center>
 <?php			
-mysql_connect('localhost','root','');
-mysql_select_db('details');
-$RESULT=mysql_query("SELECT DISTINCT count(CompanyName) from addpdrive where PVenue LIKE '%CIT%' AND YEAR(Date)=YEAR(NOW())");
-$data=mysql_fetch_assoc($RESULT);
+$connect= mysqli_connect('localhost','root','');
+mysqli_select_db($connect,'revised');
+$RESULT=mysqli_query($connect,"SELECT DISTINCT count(CompanyName) from addpdrive where PVenue LIKE '%CIT%' AND YEAR(Date)=YEAR(NOW())");
+$data=mysqli_fetch_assoc($RESULT);
 echo "<br><br><h3>Companies In Our Campus In This Year&nbsp:&nbsp";
 echo $data['count(CompanyName)'];
-$RESULT=mysql_query("SELECT count(Attendence) from updatedrive where Attendence=1 AND YEAR(Date)=YEAR(NOW())");
-$data=mysql_fetch_assoc($RESULT);
+$RESULT=mysqli_query($connect,"SELECT count(Attendence) from updatedrive where Attendence=1 AND YEAR(Date)=YEAR(NOW())");
+$data=mysqli_fetch_assoc($RESULT);
 echo "<br><BR>Number of Students Attended In This Year&nbsp:&nbsp";
 echo $data['count(Attendence)'];
-$RESULT=mysql_query("SELECT count(Placed) from updatedrive where Placed=1 AND YEAR(Date)=YEAR(NOW())");
-$data=mysql_fetch_assoc($RESULT);
+$RESULT=mysqli_query($connect,"SELECT count(Placed) from updatedrive where Placed=1 AND YEAR(Date)=YEAR(NOW())");
+$data=mysqli_fetch_assoc($RESULT);
 echo "<BR><br>Number of Students Placed In This Year&nbsp:&nbsp";
 echo $data['count(Placed)'];
 echo "</h3>";
@@ -116,8 +116,8 @@ echo "</h3>";
 </center>        
 </div>      			
           <footer class="text-right">
-            <p>Copyright &copy; 2001-2015 CIT-PMS
-            | Developed by <a href="http://znumerique.azurewebsites.net" target="_parent">ZNumerique Technologies</a></p>
+            <p>Copyright &copy; 2024 PESITM
+            | Developed by <a href="#" target="_parent">A4</a></p>
           </footer>         
         </div>
       </div>
